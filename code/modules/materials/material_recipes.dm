@@ -29,6 +29,7 @@
 		recipes += new /datum/stack_recipe("[display_name] knife", /obj/item/weapon/material/kitchen/utensil/knife/plastic, 1, on_floor = 1, supplied_material = "[name]")
 		recipes += new /datum/stack_recipe("[display_name] blade", /obj/item/weapon/material/knife/shiv, 5, time = 30, on_floor = 1, supplied_material = "[name]")
 		recipes += new /datum/stack_recipe("[display_name] shuriken", /obj/item/weapon/material/star, 2, time = 20, on_floor = 1, supplied_material = "[name]")
+		recipes += new /datum/stack_recipe("[display_name] longsword", /obj/item/weapon/material/sword/longsword, 20, time = 45, on_floor = 1, supplied_material = "[name]")
 
 /material/steel/generate_recipes()
 	..()
@@ -117,6 +118,7 @@
 	recipes += new /datum/stack_recipe("freezer floor tile", /obj/item/stack/tile/floor_freezer, 1, 4, 20)
 	recipes += new /datum/stack_recipe("hazard cone", /obj/item/weapon/caution/cone, 2, on_floor = 1)
 	recipes += new /datum/stack_recipe("small knife grip", /obj/item/weapon/material/shivgrip/plastic, 2, time = 20, one_per_turf = 0, on_floor = 1, supplied_material = "[name]")
+	recipes += new /datum/stack_recipe("long grip", /obj/item/weapon/material/longgrip/plastic, 2, time = 10, one_per_turf = 0, on_floor = 1, supplied_material = "[name]")
 
 
 /material/wood/generate_recipes()
@@ -134,6 +136,7 @@
 	recipes += new /datum/stack_recipe("coilgun stock", /obj/item/weapon/coilgun_assembly, 5)
 	recipes += new /datum/stack_recipe("stick", /obj/item/weapon/material/stick, 1)
 	recipes += new /datum/stack_recipe("small knife grip", /obj/item/weapon/material/shivgrip/wood, 2, time = 20, one_per_turf = 0, on_floor = 1, supplied_material = "[name]")
+	recipes += new /datum/stack_recipe("long grip", /obj/item/weapon/material/longgrip/wood, 2, time = 20, one_per_turf = 0, on_floor = 1, supplied_material = "[name]")
 
 /material/cardboard/generate_recipes()
 	..()
